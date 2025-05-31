@@ -5,7 +5,7 @@ const readline = require('readline');
 const scripts = {
   1: '1ath.js',
   2: '2usde.js',
-  3: '3lv1usd.js',
+  3: '3lvlusd.js',
   4: '4virtual.js',
   5: '5vana.js',
   6: '6ai16z.js',
