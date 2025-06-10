@@ -9,7 +9,8 @@ const scripts = {
   4: '4virtual.js',
   5: '5vana.js',
   6: '6ai16z.js',
-  7: '7usdOne.js'
+  7: '7usdOne.js',
+  8: '80g.js',
 };
 
 // Buat interface readline
@@ -28,8 +29,9 @@ Pilih script yang mau dijalankan:
   5. VANA
   6. AI16Z
   7. USD1
+  8. 0G
 
-Masukkan pilihan (1-7): `, (answer) => {
+Masukkan pilihan (1-8): `, (answer) => {
   const scriptNumber = parseInt(answer.trim(), 10);
   
   if (scripts[scriptNumber]) {
@@ -40,7 +42,7 @@ Masukkan pilihan (1-7): `, (answer) => {
       console.error(`Error saat menjalankan ${scripts[scriptNumber]}:`, error.message);
     }
   } else {
-    console.log('Pilihan tidak valid. Silakan pilih angka 1-7.');
+    console.log('Pilihan tidak valid. Silakan pilih angka 1-8.');
   }
 
   rl.close();
